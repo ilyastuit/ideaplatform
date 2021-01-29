@@ -16,11 +16,11 @@ public class Ticket {
 
     private Date departureDate;
 
-    private LocalTime departureTime;
+    private String departureTime;
 
     private Date arrivalDate;
 
-    private LocalTime arrivalTime;
+    private String arrivalTime;
 
     private String carrier;
 
@@ -33,9 +33,9 @@ public class Ticket {
                   String destination,
                   String destinationName,
                   Date departureDate,
-                  LocalTime departureTime,
+                  String departureTime,
                   Date arrivalDate,
-                  LocalTime arrivalTime,
+                  String arrivalTime,
                   String carrier,
                   int stops,
                   double price) {
@@ -92,11 +92,11 @@ public class Ticket {
         this.departureDate = departureDate;
     }
 
-    public LocalTime getDepartureTime() {
+    public String getDepartureTime() {
         return departureTime;
     }
 
-    public void setDepartureTime(LocalTime departureTime) {
+    public void setDepartureTime(String departureTime) {
         this.departureTime = departureTime;
     }
 
@@ -108,11 +108,11 @@ public class Ticket {
         this.arrivalDate = arrivalDate;
     }
 
-    public LocalTime getArrivalTime() {
+    public String getArrivalTime() {
         return arrivalTime;
     }
 
-    public void setArrivalTime(LocalTime arrivalTime) {
+    public void setArrivalTime(String arrivalTime) {
         this.arrivalTime = arrivalTime;
     }
 

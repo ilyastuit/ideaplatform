@@ -4,18 +4,18 @@ import java.util.List;
 import java.util.Objects;
 
 public class TicketList {
-    private List<Ticket> ticketList;
+    private List<Ticket> tickets;
 
     public TicketList(List<Ticket> ticketList) {
-        this.ticketList = ticketList;
+        this.tickets = ticketList;
     }
 
-    public List<Ticket> getTicketList() {
-        return ticketList;
+    public List<Ticket> getTickets() {
+        return tickets;
     }
 
-    public void setTicketList(List<Ticket> ticketList) {
-        this.ticketList = ticketList;
+    public void setTickets(List<Ticket> tickets) {
+        this.tickets = tickets;
     }
 
     @Override
@@ -23,18 +23,18 @@ public class TicketList {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         TicketList that = (TicketList) o;
-        return Objects.equals(ticketList, that.ticketList);
+        return Objects.equals(tickets, that.tickets);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(ticketList);
+        return Objects.hash(tickets);
     }
 
     @Override
     public String toString() {
         return "TicketList{" +
-                "ticketList=" + ticketList +
+                "ticketList=" + tickets +
                 '}';
     }
 }

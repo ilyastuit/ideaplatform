@@ -1,4 +1,4 @@
-package com.ilyastuit.ideaplatform.entities;
+package com.ilyastuit.ideaplatform.entities.tickets;
 
 import java.util.List;
 import java.util.Objects;

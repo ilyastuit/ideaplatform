@@ -1,4 +1,4 @@
-package com.ilyastuit.ideaplatform.entities;
+package com.ilyastuit.ideaplatform.entities.tickets;
 
 import java.time.LocalTime;
 import java.util.Date;

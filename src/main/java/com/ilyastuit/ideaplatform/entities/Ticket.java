@@ -28,7 +28,17 @@ public class Ticket {
 
     private double price;
 
-    public Ticket(String origin, String originName, String destination, String destinationName, Date departureDate, LocalTime departureTime, Date arrivalDate, LocalTime arrivalTime, String carrier, int stops, double price) {
+    public Ticket(String origin,
+                  String originName,
+                  String destination,
+                  String destinationName,
+                  Date departureDate,
+                  LocalTime departureTime,
+                  Date arrivalDate,
+                  LocalTime arrivalTime,
+                  String carrier,
+                  int stops,
+                  double price) {
         this.origin = origin;
         this.originName = originName;
         this.destination = destination;

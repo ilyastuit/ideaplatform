@@ -64,7 +64,7 @@ public class SimpleFlightTimingService implements TimingService {
         return arrivalTime.getTime() - departureTime.getTime();
     }
 
-    private static Long getProcentile(List<Long> list, double proc) {
+    private Long getProcentile(List<Long> list, double proc) {
         Collections.sort(list);
         int index = (int) (list.size() * proc / 100);
         if (index < list.size() - 1) index++;

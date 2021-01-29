@@ -5,6 +5,7 @@ Write a java program that reads tickets.json file and calculates:
 
 The program should be called from the Linux command line, and the results should be presented in text form.
 
+
 # Usage 
 - run ideaplatform.jar file from terminal
   ```sh

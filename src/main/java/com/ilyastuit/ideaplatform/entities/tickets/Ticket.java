@@ -14,11 +14,11 @@ public class Ticket {
 
     private String destinationName;
 
-    private Date departureDate;
+    private String departureDate;
 
     private String departureTime;
 
-    private Date arrivalDate;
+    private String arrivalDate;
 
     private String arrivalTime;
 
@@ -32,9 +32,9 @@ public class Ticket {
                   String originName,
                   String destination,
                   String destinationName,
-                  Date departureDate,
+                  String departureDate,
                   String departureTime,
-                  Date arrivalDate,
+                  String arrivalDate,
                   String arrivalTime,
                   String carrier,
                   int stops,
@@ -84,11 +84,11 @@ public class Ticket {
         this.destinationName = destinationName;
     }
 
-    public Date getDepartureDate() {
+    public String getDepartureDate() {
         return departureDate;
     }
 
-    public void setDepartureDate(Date departureDate) {
+    public void setDepartureDate(String departureDate) {
         this.departureDate = departureDate;
     }
 
@@ -100,11 +100,11 @@ public class Ticket {
         this.departureTime = departureTime;
     }
 
-    public Date getArrivalDate() {
+    public String getArrivalDate() {
         return arrivalDate;
     }
 
-    public void setArrivalDate(Date arrivalDate) {
+    public void setArrivalDate(String arrivalDate) {
         this.arrivalDate = arrivalDate;
     }
 

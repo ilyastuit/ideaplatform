@@ -1,4 +1,4 @@
-package com.ilyastuit.ideaplatform.services.parsers.impl;
+package com.ilyastuit.ideaplatform.services.parser.impl;
 
 import com.fatboyindustrial.gsonjavatime.Converters;
 import com.google.gson.FieldNamingPolicy;
@@ -6,7 +6,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
 import com.ilyastuit.ideaplatform.entities.tickets.TicketList;
-import com.ilyastuit.ideaplatform.services.parsers.ParserService;
+import com.ilyastuit.ideaplatform.services.parser.ParserService;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

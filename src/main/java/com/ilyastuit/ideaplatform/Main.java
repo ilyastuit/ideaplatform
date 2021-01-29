@@ -2,8 +2,10 @@ package com.ilyastuit.ideaplatform;
 
 import com.ilyastuit.ideaplatform.entities.tickets.Ticket;
 import com.ilyastuit.ideaplatform.entities.tickets.TicketList;
-import com.ilyastuit.ideaplatform.services.parsers.ParserService;
-import com.ilyastuit.ideaplatform.services.parsers.impl.GsonParserService;
+import com.ilyastuit.ideaplatform.services.parser.ParserService;
+import com.ilyastuit.ideaplatform.services.parser.impl.GsonParserService;
+import com.ilyastuit.ideaplatform.services.timing.TimingService;
+import com.ilyastuit.ideaplatform.services.timing.impl.SimpleFlightTimingService;
 
 import java.io.FileNotFoundException;
 
@@ -23,9 +25,10 @@ public class Main {
 
         TicketList ticketList = (TicketList) parserService.parse();
 
-        for (Ticket ticket: ticketList.getTickets()) {
-            System.out.println(ticket);
-        }
+        TimingService timingService = new SimpleFlightTimingService(ticketList);
+
+        timingService.showAverageFlightTime();
+        timingService.showPercentile(90D);
     }
 
 }

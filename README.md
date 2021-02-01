@@ -1,4 +1,4 @@
-# The task
+# Task
 Write a java program that reads tickets.json file and calculates:
 - The average flight time between Vladivostok and Tel Aviv
 - 90th percentile of the flight time between Vladivostok and Tel Aviv
